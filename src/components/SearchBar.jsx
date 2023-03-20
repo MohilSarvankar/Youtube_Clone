@@ -20,7 +20,7 @@ const SearchBar = () => {
                 className="search-bar"
                 placeholder="Search..."
                 value=""
-                onChage={()=>{}}
+                onChange={()=>{}}
             />
             <IconButton type="submit" sx={{p:'10px', color: 'red'}}>
                 <Search/>
