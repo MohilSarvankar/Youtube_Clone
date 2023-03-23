@@ -7,12 +7,12 @@ import { CheckCircle } from '@mui/icons-material';
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
     console.log(videoId, snippet);
     return (
-        <Card sx={{width: {md:'320px', xs:'100%', borderRadius: 0, boxShadow:'none'}}}>
+        <Card sx={{width: {xs:'100%',sm:'358px', md:'320px'}, borderRadius: 0, boxShadow:'none'}}>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <CardMedia
                     image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
                     alt={snippet?.title}
-                    sx={{ width: 358, height: 180 }}
+                    sx={{ width: {xs: '100%',sm:'358px', md: '320px'} , height: 180 }}
                 />
                 <CardContent sx={{backgroundColor: '#1e1e1e',height:'106px'}}>
                     <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
